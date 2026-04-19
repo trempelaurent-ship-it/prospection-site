@@ -1,0 +1,59 @@
+[
+  {
+    "slug": "boiseries-sir-laurier",
+    "name": "Boiseries Sir Laurier",
+    "sector": "menuiserie",
+    "sectorLabel": "Menuiserie / ébénisterie",
+    "city": "Drummondville",
+    "region": "Cantons-de-l'Est",
+    "email": "steven@sirlaurier.com",
+    "originalSite": null,
+    "tagline": "Le savoir-faire qui fait parler votre atelier.",
+    "hero_subtitle": "Boiseries Sir Laurier façonne le bois depuis des années à Drummondville. Découvrez ce à quoi pourrait ressembler votre présence en ligne.",
+    "about": "Chaque pièce de bois raconte une histoire. Chez Boiseries Sir Laurier, vous donnez forme à ces histoires depuis votre atelier à Drummondville. Ce site est une proposition pour mettre votre métier en valeur — comme vos clients le voient déjà.",
+    "services": [
+      {"title": "Ébénisterie sur mesure", "description": "Meubles, armoires, portes : chaque projet pensé et exécuté à la main dans votre atelier."},
+      {"title": "Restauration de boiseries", "description": "Redonner vie aux pièces d'exception. Patine d'origine préservée, finitions traditionnelles."},
+      {"title": "Conseils & estimation", "description": "Un appel, un croquis, un devis clair. L'artisanat commence par l'écoute."}
+    ],
+    "cta_text": "Discuter d'un projet"
+  },
+  {
+    "slug": "eco-marco-toiture",
+    "name": "Eco Marco Toiture",
+    "sector": "couvreurs",
+    "sectorLabel": "Couvreurs / toiture",
+    "city": null,
+    "region": "Montérégie",
+    "email": "info@ecomarcotoitureexpert.com",
+    "originalSite": "https://ecomarcotoitureexpert.com/",
+    "tagline": "Toitures durables. Service sans compromis.",
+    "hero_subtitle": "Eco Marco Toiture protège les maisons de la Montérégie des intempéries depuis plus d'une décennie. Voici à quoi pourrait ressembler votre présence web.",
+    "about": "Une toiture bien faite, c'est une maison qui dort tranquille. Eco Marco Toiture accompagne les propriétaires de la Montérégie avec un engagement simple : un travail propre, fait dans les règles.",
+    "services": [
+      {"title": "Installation de toiture", "description": "Bardeaux, membranes élastomères, tôle architecturale. Garantie écrite, main-d'œuvre certifiée."},
+      {"title": "Inspection & diagnostic", "description": "Avant l'achat, après l'hiver, ou au moindre doute. Rapport photos inclus."},
+      {"title": "Réparations d'urgence", "description": "Intervention rapide après tempête. Bâchage d'urgence et remise en état."}
+    ],
+    "cta_text": "Demander une soumission"
+  },
+  {
+    "slug": "acier-anica",
+    "name": "Acier Anica",
+    "sector": "usinage_soudure",
+    "sectorLabel": "Usinage / soudure industrielle",
+    "city": null,
+    "region": "Montérégie",
+    "email": "info@acieranicasteel.com",
+    "originalSite": null,
+    "tagline": "L'acier travaillé avec précision. Les délais respectés.",
+    "hero_subtitle": "Acier Anica livre aux entrepreneurs et aux industriels qui n'ont pas le temps d'attendre. Voici votre métier, mis en valeur.",
+    "about": "L'industrie n'attend pas. Acier Anica le sait, et c'est pour ça que ses clients reviennent. Soudure, coupe, assemblage : un atelier qui livre, pas qui promet.",
+    "services": [
+      {"title": "Soudure industrielle", "description": "TIG, MIG, arc. Aciers doux, inoxydables, aluminium. Soudeurs certifiés CWB."},
+      {"title": "Usinage sur mesure", "description": "Pièces à l'unité ou en série. Précision tolérancée selon vos plans."},
+      {"title": "Structures métalliques", "description": "Escaliers, rampes, charpentes. Design, fabrication et livraison coordonnés."}
+    ],
+    "cta_text": "Soumettre un projet"
+  }
+]
