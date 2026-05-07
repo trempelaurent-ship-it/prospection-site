@@ -34,13 +34,13 @@ export default function PlombHero({ prospect }: { prospect: Prospect }) {
       >
         <video
           autoPlay muted loop playsInline
-          className="h-full w-full object-cover opacity-40"
+          className="h-full w-full object-cover opacity-60"
           poster="/images/plomberie-poster.jpg"
         >
           <source src="/videos/plomberie.mp4" type="video/mp4" />
           <source src="/videos/toiture.mp4" type="video/mp4" />
         </video>
-        <div className="absolute inset-0 bg-gradient-to-b from-[#080C10]/50 via-[#080C10]/60 to-[#080C10]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#080C10]/30 via-[#080C10]/40 to-[#080C10]" />
       </motion.div>
 
       {/* Grain overlay */}
@@ -72,13 +72,13 @@ export default function PlombHero({ prospect }: { prospect: Prospect }) {
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3, duration: 0.6 }}
-          className="mb-8 text-base uppercase tracking-[0.35em] text-white/50 font-medium"
+          className="mb-8 text-base uppercase tracking-[0.35em] text-white/70 font-medium"
         >
           {prospect.city} · {prospect.region}
         </motion.p>
 
         {/* Name — word by word reveal */}
-        <div className="mb-6 flex flex-wrap justify-center gap-x-6"
+        <div className="mb-6 flex flex-wrap justify-center gap-x-6 [filter:drop-shadow(0_0_40px_rgba(56,189,248,0.25))]"
           style={{ perspective: "800px" }}>
           {words.map((word, i) => (
             <div key={i} className="overflow-hidden">
@@ -102,7 +102,7 @@ export default function PlombHero({ prospect }: { prospect: Prospect }) {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.9, duration: 0.8 }}
-          className="mb-4 max-w-xl text-2xl text-white/75 md:text-3xl italic"
+          className="mb-4 max-w-xl text-2xl text-white/90 md:text-3xl italic"
         >
           « {prospect.tagline} »
         </motion.p>
@@ -111,7 +111,7 @@ export default function PlombHero({ prospect }: { prospect: Prospect }) {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.1, duration: 0.8 }}
-          className="mb-12 max-w-lg text-base text-white/45 leading-relaxed"
+          className="mb-12 max-w-lg text-base text-white/65 leading-relaxed"
         >
           {prospect.hero_subtitle}
         </motion.p>
@@ -144,8 +144,8 @@ export default function PlombHero({ prospect }: { prospect: Prospect }) {
         animate={{ y: [0, 8, 0] }}
         transition={{ repeat: Infinity, duration: 2.5, ease: "easeInOut" }}
       >
-        <div className="h-14 w-px bg-gradient-to-b from-transparent to-sky-400/80" />
-        <span className="text-xs uppercase tracking-[0.4em] text-white/55 font-medium">Défiler</span>
+        <div className="h-14 w-px bg-gradient-to-b from-transparent to-sky-400" />
+        <span className="text-xs uppercase tracking-[0.4em] text-sky-400/80 font-medium">Défiler</span>
       </motion.div>
     </section>
   );
