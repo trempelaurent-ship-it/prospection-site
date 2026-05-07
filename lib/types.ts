@@ -1,4 +1,4 @@
-export type Sector = "menuiserie" | "usinage_soudure" | "couvreurs";
+export type Sector = "menuiserie" | "usinage_soudure" | "couvreurs" | "plomberie";
 
 export type Prospect = {
   slug: string;
@@ -42,5 +42,10 @@ export const SECTOR_THEMES: Record<Sector, SectorTheme> = {
     videoSrc: "/videos/toiture.mp4",
     accentColor: "#64748b",
     bgGradient: "from-slate-900 via-gray-900 to-black",
+  },
+  plomberie: {
+    videoSrc: "/videos/plomberie.mp4",
+    accentColor: "#38BDF8",
+    bgGradient: "from-sky-950 via-slate-900 to-black",
   },
 };

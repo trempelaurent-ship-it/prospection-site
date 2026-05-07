@@ -3,6 +3,12 @@ import Hero from "@/components/Hero";
 import Services from "@/components/Services";
 import About from "@/components/About";
 import Contact from "@/components/Contact";
+import PlombHero from "@/components/plomberie/Hero";
+import FaucetScrollAnimation from "@/components/plomberie/FaucetScrollAnimation";
+import PlombServices from "@/components/plomberie/Services";
+import PlombStats from "@/components/plomberie/Stats";
+import PlombTestimonials from "@/components/plomberie/Testimonials";
+import PlombContact from "@/components/plomberie/Contact";
 import { getAllProspects, getProspectBySlug } from "@/lib/prospects";
 
 export async function generateStaticParams() {
@@ -31,6 +37,19 @@ export default async function Page({
   const { slug } = await params;
   const prospect = getProspectBySlug(slug);
   if (!prospect) notFound();
+
+  if (prospect.sector === "plomberie") {
+    return (
+      <main className="min-h-screen bg-[#080C10]">
+        <PlombHero prospect={prospect} />
+        <FaucetScrollAnimation />
+        <PlombServices prospect={prospect} />
+        <PlombStats />
+        <PlombTestimonials />
+        <PlombContact prospect={prospect} />
+      </main>
+    );
+  }
 
   return (
     <main className="min-h-screen bg-black">
