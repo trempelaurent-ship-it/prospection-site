@@ -1,8 +1,4 @@
 import { notFound } from "next/navigation";
-import Hero from "@/components/Hero";
-import Services from "@/components/Services";
-import About from "@/components/About";
-import Contact from "@/components/Contact";
 import PlombHero from "@/components/plomberie/Hero";
 import FaucetScrollAnimation from "@/components/plomberie/FaucetScrollAnimation";
 import PlombServices from "@/components/plomberie/Services";
@@ -51,12 +47,5 @@ export default async function Page({
     );
   }
 
-  return (
-    <main className="min-h-screen bg-black">
-      <Hero prospect={prospect} />
-      <About prospect={prospect} />
-      <Services prospect={prospect} />
-      <Contact prospect={prospect} />
-    </main>
-  );
+  return notFound();
 }
